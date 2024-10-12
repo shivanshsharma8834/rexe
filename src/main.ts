@@ -5,9 +5,9 @@ import { Ray } from './ray';
 const HEIGHT : number = 720;
 const WIDTH  : number = 1280;
 const SCALE : number = 2;
-const ASPECT_RATIO : number = 16.0 / 9.0;
+// const ASPECT_RATIO : number = 16.0 / 9.0;
 
-const focal_length = 1.0;
+// const focal_length = 1.0;
 const camera_center = new Vector3(0, 0, 0);
 
 
