@@ -13,11 +13,12 @@ const camera_center = new Vector3(0, 0, 0);
 
 function ray_color(ray : Ray) {
   const unit_direction =  ray.direction.normalize();
+  const a = 0.5 * unit_direction.y + 1.0;
 
   return {
-    r : 0,
-    g : 0,
-    b : (unit_direction.y * 255) % 255,
+    r : (1.0 - a + a * 0.5) * 255,
+    g : (1.0 - a + a * 0.7) * 255,
+    b : (1.0 - a + a * 1.0) * 255,
   }
 
 }
